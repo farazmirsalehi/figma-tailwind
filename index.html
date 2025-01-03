@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="public/css/output.css" />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!-- Start Project -->
+    <div class="w-full bg-backgroundHero flex flex-wrap">
+      <!-- Navbar -->
+      <div class="container flex items-center justify-between py-4">
+        <!-- Logo -->
+        <div class="w-1/3">
+          <img
+            src="./public/css/partials/images/hero-home/logo.svg"
+            alt="Logo"
+          />
+        </div>
+        <!-- Hamburger Menu -->
+        <div class="block desktop:hidden">
+          <button
+            id="menu-btn"
+            class="text-[#BBBBCB] hover:text-white focus:outline-none"
+          >
+            <svg
+              class="w-8 h-8"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+        <style>
+          .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #1c1e53;
+            display: none;
+            margin-top: 0px;
+            overflow-y: scroll;
+          }
+          .mobile-menu a {
+            width: 100%;
+            display: block;
+            padding: 30px;
+            color: #fff;
+            text-align: center;
+          }
+          .mobile-menu.show {
+            display: block;
+          }
+          .close-btn {
+            display: block;
+            width: 100%;
+            font-size: 28px;
+            color: white;
+            padding: 8px;
+            display: none;
+          }
+          .mobile-menu.show .close-btn {
+            display: block;
+          }
+        </style>
+        <!-- Navigation Links -->
+        <div
+          id="menu"
+          class="hidden mobail:items-start mobail:flex-col gap-4 mt-4 w-full desktop:flex desktop:flex-row desktop:justify-end desktop:items-center desktop:mt-0 font-[poppins] text-[16px] text-[#BBBBCB]"
+        >
+          <span id="close-btn" class="close-btn">X</span>
+          <a href="./index.html" class="text-[#ffffff]">Home</a>
+          <a href="./aboutus.html" class="hover:text-[#ffffff]">About us</a>
+          <a href="./features.html" class="hover:text-[#ffffff]">Features</a>
+          <a href="./pricing.html" class="hover:text-[#ffffff]">Pricing</a>
+          <a href="#" class="hover:text-[#ffffff]">FAQ</a>
+          <a href="./blogpage.html" class="hover:text-[#ffffff]">Blog</a>
+          <a
+            href="./contactus.html"
+            class="px-4 py-2 border border-[#F4F6FC33] rounded-full hover:text-backgroundHero hover:bg-[#FCD980] hover:border-[#ffffff] tranlate duration-300"
+            >Contact us</a
+          >
+        </div>
+      </div>
+      <!-- End Navbar -->
+
+      <!-- Hero Section -->
+      <div class="container flex flex-wrap items-center py-16">
+        <!-- Left Column -->
+        <div
+          class="w-full desktop:w-1/2 text-white text-center desktop:text-left font-[poppins]"
+        >
+          <h1
+            class="desktop:leading-[74px] desktop:text-5xl desktop:font-semibold mobail:text-3xl desktop:pr-[100px]"
+          >
+            Building stellar websites for early startups
+          </h1>
+          <p
+            class="desktop:text-base mb-6 desktop:pr-[80px] desktop:font-thin desktop:py-6"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+          <div
+            class="mobail:block mobail:py-2 desktop:flex desktop:gap-4 desktop:mt-4"
+          >
+            <a
+              href="./work.html"
+              class="bg-[#FCD980] text-backgroundHero px-6 py-3 rounded-full hover:bg-[#BBBBCB] tranlate duration-300"
+              >View our work</a
+            >
+            <a
+              href="#"
+              class="mobail:justify-center mobail:px-3 text-white flex items-center px-6 py-3 rounded-full hover:bg-[#BBBBCB] hover:text-backgroundHero tranlate duration-300 text-[14px]"
+            >
+              View Pricing
+              <img
+                src="./public/css/partials/images/hero-home/Arrow 1.svg"
+                alt="Arrow"
+                class="ml-2 flex"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div
+          class="w-full desktop:w-1/2 flex justify-center hidden desktop:block"
+        >
+          <img
+            src="./public/css/partials/images/hero-home/Illustration.svg"
+            alt="Hero Image"
+            class="max-w-full h-auto"
+          />
+        </div>
+      </div>
+      <!-- End Hero Section -->
+    </div>
+    <!-- how to work -->
+    <div class="bg-[#F4F6FC] flex flex-wrap py-[128px] h-max">
+      <div class="container flex flex-wrap h-fit">
+        <!-- ستون اول -->
+        <div
+          class="w-full desktop:w-1/3 flex flex-wrap font-[poppins] h-auto desktop:h-[184px]"
+        >
+          <h2 class="text-3xl desktop:text-5xl font-semibold text-[#282938]">
+            How we work
+          </h2>
+          <p class="font-normal py-[16px] text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor.
+          </p>
+          <a
+            href="#"
+            class="text-[#2405F2] text-base desktop:text-xl font-medium flex flex-wrap hover:text-backgroundHero"
+          >
+            Get in touch with us
+            <img
+              src="./public/css/partials/images/home/Arrow 2.svg"
+              alt="Arrow"
+              class="ml-2 pb-2 flex"
+            />
+          </a>
+        </div>
+        <!-- ستون دوم -->
+        <div
+          class="w-full desktop:w-2/3 flex flex-wrap desktop:pl-24 font-[poppins]"
+        >
+          <!-- کارت‌ها -->
+          <div
+            class="w-full mobail:w-1/2 desktop:w-1/2 flex flex-col items-start pb-[48px]"
+          >
+            <img
+              class="mb-4"
+              src="./public/css/partials/images/home/1.svg"
+              alt=""
+            />
+            <h2
+              class="text-lg desktop:text-3xl font-semibold text-[#282938] mb-2"
+            >
+              Strategy
+            </h2>
+            <p class="text-sm font-normal text-gray-600">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam.
+            </p>
+          </div>
+          <div
+            class="w-full mobail:w-1/2 desktop:w-1/2 flex flex-col items-start pb-[48px]"
+          >
+            <img
+              class="mb-4"
+              src="./public/css/partials/images/home/pointer 1 (1).svg"
+              alt=""
+            />
+            <h2
+              class="text-lg desktop:text-3xl font-semibold text-[#282938] mb-2"
+            >
+              Wireframing
+            </h2>
+            <p class="text-sm font-normal text-gray-600">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam.
+            </p>
+          </div>
+          <div
+            class="w-full mobail:w-1/2 desktop:w-1/2 flex flex-col items-start pb-[48px]"
+          >
+            <img
+              class="mb-4"
+              src="./public/css/partials/images/home/pointer 1.svg"
+              alt=""
+            />
+            <h2
+              class="text-lg desktop:text-3xl font-semibold text-[#282938] mb-2"
+            >
+              Design
+            </h2>
+            <p class="text-sm font-normal text-gray-600">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam.
+            </p>
+          </div>
+          <div
+            class="w-full mobail:w-1/2 desktop:w-1/2 flex flex-col items-start pb-[48px]"
+          >
+            <img
+              class="mb-4"
+              src="./public/css/partials/images/home/pointer 1 (2).svg"
+              alt=""
+            />
+            <h2
+              class="text-lg desktop:text-3xl font-semibold text-[#282938] mb-2"
+            >
+              Development
+            </h2>
+            <p class="text-sm font-normal text-gray-600">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end how to work -->
+    <!-- our work -->
+    <div class="bg-white flex flex-wrap py-[128px]">
+      <div class="container flex flex-wrap font-[poppins]">
+        <div class="w-full mobail:w-full desktop:w-2/3">
+          <h2
+            class="text-3xl mobile:text-2xl desktop:text-5xl font-semibold text-[#282938]"
+          >
+            View our projects
+          </h2>
+          <div class="relative group overflow-hidden pt-[64px]">
+            <img
+              src="./public/css/partials/images/home/image.jpeg"
+              alt="Main Image"
+              class="w-full h-full object-cover"
+            />
+
+            <div
+              class="absolute top-[64px] left-[-100%] h-full w-1/2 bg-gradient-to-tl from-[#1C1E53] to-[#1C1E536B] bg-opacity-70 flex flex-col justify-center text-white transition-all duration-500 ease-in-out group-hover:left-0 items-start"
+            >
+              <h2
+                class="opacity-0 translate-y-8 transition-all duration-500 delay-200 group-hover:opacity-100 group-hover:translate-y-0 text-xl font-semibold desktop:pl-[48px] mobail:pl-4"
+              >
+                Workhub office Webflow Webflow Design
+              </h2>
+              <p
+                class="opacity-0 translate-y-8 transition-all duration-500 delay-300 group-hover:opacity-100 group-hover:translate-y-0 text-sm desktop:pl-[48px] py-[16px] mobail:pl-4"
+              >
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam
+              </p>
+              <a
+                href="#"
+                class="text-[#FCD980] flex flex-wrap hover:text-backgroundHero desktop:pl-[48px] mobail:pl-4"
+              >
+                View project
+                <img
+                  src="./public/css/partials/images/home/ar.svg"
+                  alt="Arrow"
+                  class="ml-2 flex"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full mobail:w-full desktop:w-1/3 flex flex-wrap justify-between"
+        >
+          <span
+            class="font-[poppins] text-[#282938] flex items-end justify-end pt-[20px] ml-auto mobail:text-sm desktop:text-lg"
+            >view more</span
+          >
+          <div class="w-full pt-[68px]">
+            <div
+              class="relative flex flex-row-reverse overflow-hidden w-full h-[284px] group"
+            >
+              <img
+                class="w-[320px] flex items-end justify-end"
+                src="./public/css/partials/images/home/image2.jpeg"
+                alt=""
+              />
+
+              <div
+                class="absolute top-0 right-[-100%] h-full w-11/12 bg-gradient-to-tl from-[#1C1E53] to-[#1C1E536B] bg-opacity-70 transition-all duration-500 ease-in-out group-hover:right-0"
+              >
+                <div
+                  class="flex flex-col justify-center h-full px-6 text-white"
+                >
+                  <h2
+                    class="text-xl font-semibold w-2/3 opacity-0 translate-y-8 transition-all duration-500 delay-300 group-hover:opacity-100 group-hover:translate-y-0"
+                  >
+                    Unisaas Website Design
+                  </h2>
+                  <a
+                    href="#"
+                    class="text-[#FCD980] flex flex-wrap hover:text-backgroundHero pt-[8px] opacity-0 translate-y-8 transition-all duration-500 delay-200 group-hover:opacity-100 group-hover:translate-y-0"
+                  >
+                  View portfolio
+                    <img
+                      src="./public/css/partials/images/home/ar.svg"
+                      alt="Arrow"
+                      class="ml-2 flex"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="relative flex flex-row-reverse  overflow-hidden w-full pt-[12px] h-[284px] group "
+            >
+              <img
+                class="w-[320px] h-[250px] flex items-end justify-end"
+                src="./public/css/partials/images/home/image3.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end our work -->
+    <!-- features -->
+    <div
+      class="w-full flex justify-center items-center font-[poppins] bg-[#F4F6FC] desktop:pb-[48px]"
+    >
+      <div class="text-center px-4">
+        <span class="text-[#282938] text-lg font-medium">Features</span>
+        <p
+          class="w-full max-w-[630px] mx-auto text-[#282938] text-2xl desktop:text-5xl font-semibold leading-snug"
+        >
+          Design that solves problems, one product at a time
+        </p>
+      </div>
+    </div>
+    <div class="w-full flex flex-wrap font-[poppins] bg-[#F4F6FC]">
+      <div
+        class="container flex flex-wrap gap-6 justify-center desktop:justify-between pb-[64px]"
+      >
+        <div
+          class="w-full desktop:w-[30%] bg-white px-6 pt-8 pb-4 rounded-md shadow-sm"
+        >
+          <img
+            class="pb-4 mx-auto desktop:mx-0"
+            src="./public/css/partials/images/home/Icon (1).svg"
+            alt=""
+          />
+          <h3 class="text-xl font-semibold text-[#282938] pb-2">
+            Uses Client First
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam
+            sed faucib turpis eu gravida mi.
+          </p>
+        </div>
+
+        <div
+          class="w-full desktop:w-[30%] bg-white px-6 pt-8 pb-4 rounded-md shadow-sm"
+        >
+          <img
+            class="pb-4 mx-auto desktop:mx-0"
+            src="./public/css/partials/images/home/Icon (1).svg"
+            alt=""
+          />
+          <h3 class="text-xl font-semibold text-[#282938] pb-2">
+            Uses Client First
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam
+            sed faucib turpis eu gravida mi.
+          </p>
+        </div>
+
+        <div
+          class="w-full desktop:w-[30%] bg-white px-6 pt-8 pb-4 rounded-md shadow-sm"
+        >
+          <img
+            class="pb-4 mx-auto desktop:mx-0"
+            src="./public/css/partials/images/home/Icon (1).svg"
+            alt=""
+          />
+          <h3 class="text-xl font-semibold text-[#282938] pb-2">
+            Uses Client First
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam
+            sed faucib turpis eu gravida mi.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex flex-wrap font-[poppins] bg-[#F4F6FC]">
+      <div
+        class="container flex flex-wrap gap-6 justify-center desktop:justify-between pb-[64px]"
+      >
+        <div
+          class="w-full desktop:w-[30%] bg-white px-6 pt-8 pb-4 rounded-md shadow-sm"
+        >
+          <img
+            class="pb-4 mx-auto desktop:mx-0"
+            src="./public/css/partials/images/home/Icon (1).svg"
+            alt=""
+          />
+          <h3 class="text-xl font-semibold text-[#282938] pb-2">
+            Uses Client First
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam
+            sed faucib turpis eu gravida mi.
+          </p>
+        </div>
+
+        <div
+          class="w-full desktop:w-[30%] bg-white px-6 pt-8 pb-4 rounded-md shadow-sm"
+        >
+          <img
+            class="pb-4 mx-auto desktop:mx-0"
+            src="./public/css/partials/images/home/Icon (1).svg"
+            alt=""
+          />
+          <h3 class="text-xl font-semibold text-[#282938] pb-2">
+            Uses Client First
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam
+            sed faucib turpis eu gravida mi.
+          </p>
+        </div>
+
+        <div
+          class="w-full desktop:w-[30%] bg-white px-6 pt-8 pb-4 rounded-md shadow-sm"
+        >
+          <img
+            class="pb-4 mx-auto desktop:mx-0"
+            src="./public/css/partials/images/home/Icon (1).svg"
+            alt=""
+          />
+          <h3 class="text-xl font-semibold text-[#282938] pb-2">
+            Uses Client First
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam
+            sed faucib turpis eu gravida mi.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- end features -->
+    <!-- testimonials -->
+    <div class="w-full flex flex-wrap">
+      <div class="container flex flex-wrap font-[poppins] pt-[130px]">
+        <div class="w-full mobail:w-full desktop:w-1/3">
+          <div class="w-full md:w-[327px]">
+            <h3 class="text-3xl font-bold text-[#282938] pb-[16px]">
+              What our clients say about us
+            </h3>
+            <p class="text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-full mobail:w-full desktop:w-2/3 pl-[32px] h-[250px] flex flex-wrap"
+        >
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="w-full font-[poppins] flex flex-col items-start">
+                  <!-- متن نقل قول -->
+                  <p
+                    class="text-3xl text-[#282938] font-semibold text-left mb-12"
+                  >
+                    "The best agency we’ve worked with so far. They understand
+                    our product and are able to add new features with a great
+                    focus."
+                  </p>
+
+                  <!-- بخش عکس و نام -->
+                  <div class="w-full flex items-center">
+                    <!-- بخش عکس -->
+                    <div class="w-[52px] h-[52px]">
+                      <img
+                        class="w-full h-full object-cover rounded-full"
+                        src="./public/css/partials/images/home/Mask Group.jpg"
+                        alt="Jenny Wilson"
+                      />
+                    </div>
+
+                    <!-- نام -->
+                    <div>
+                      <span class="ml-4 font-semibold text-[#282938]"
+                        >Jenny Wilson</span
+                      ><br />
+                      <span class="pl-[16px] text-[#282938]">President</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- سایر اسلایدها ... -->
+              <div class="swiper-slide">
+                <div class="w-full font-[poppins] flex flex-col items-start">
+                  <!-- متن نقل قول -->
+                  <p
+                    class="text-3xl text-[#282938] font-semibold text-left mb-12"
+                  >
+                    "The best agency we’ve worked with so far. They understand
+                    our product and are able to add new features with a great
+                    focus."
+                  </p>
+
+                  <!-- بخش عکس و نام -->
+                  <div class="w-full flex items-center">
+                    <!-- بخش عکس -->
+                    <div class="w-[52px] h-[52px]">
+                      <img
+                        class="w-full h-full object-cover rounded-full"
+                        src="./public/css/partials/images/home/Mask Group.jpg"
+                        alt="Jenny Wilson"
+                      />
+                    </div>
+
+                    <!-- نام -->
+                    <div>
+                      <span class="ml-4 font-semibold text-[#282938]"
+                        >Jenny Wilson</span
+                      ><br />
+                      <span class="pl-[16px] text-[#282938]">President</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="w-full font-[poppins] flex flex-col items-start">
+                  <!-- متن نقل قول -->
+                  <p
+                    class="text-3xl text-[#282938] font-semibold text-left mb-12"
+                  >
+                    "The best agency we’ve worked with so far. They understand
+                    our product and are able to add new features with a great
+                    focus."
+                  </p>
+
+                  <!-- بخش عکس و نام -->
+                  <div class="w-full flex items-center">
+                    <!-- بخش عکس -->
+                    <div class="w-[52px] h-[52px]">
+                      <img
+                        class="w-full h-full object-cover rounded-full"
+                        src="./public/css/partials/images/home/Mask Group.jpg"
+                        alt="Jenny Wilson"
+                      />
+                    </div>
+
+                    <!-- نام -->
+                    <div>
+                      <span class="ml-4 font-semibold text-[#282938]"
+                        >Jenny Wilson</span
+                      ><br />
+                      <span class="pl-[16px] text-[#282938]">President</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end testimonials -->
+    <!-- FAQ -->
+    <div class="w-full flex flex-col font-[poppins]">
+      <div
+        class="container py-[64px] mobail:py-[32px] flex flex-wrap mobail:flex-col desktop:flex-row desktop:justify-between desktop:items-start"
+      >
+        <!-- Left Section (Title) -->
+        <div class="w-full desktop:w-1/3 mobail:mb-8 desktop:pr-8">
+          <h4
+            class="text-[#282938] font-semibold text-3xl mobail:text-2xl pb-[16px]"
+          >
+            Frequently asked questions
+          </h4>
+          <span class="text-[#2405F2] text-base">Contact us for more info</span>
+        </div>
+
+        <!-- Right Section (Accordion) -->
+        <div class="w-full desktop:w-2/3">
+          <!-- Accordion Item 1 -->
+          <div class="border-b border-[#ECECF1] rounded-md mb-4">
+            <button
+              class="w-full flex items-center px-4 py-3 text-left"
+              onclick="toggleAccordion(1)"
+            >
+              <span class="text-xl text-[#2405F2] pr-[32px]">01</span>
+              <span class="text-lg desktop:text-2xl text-[#282938]">
+                How much time does it take?
+              </span>
+              <span id="icon-1" class="ml-auto transition-transform transform"
+                >+</span
+              >
+            </button>
+            <div
+              id="content-1"
+              class="px-4 mobail:px-8 desktop:px-16 py-2 text-[#282938] hidden"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+
+          <!-- Accordion Item 2 -->
+          <div class="border-b border-[#ECECF1] rounded-md mb-4">
+            <button
+              class="w-full flex items-center px-4 py-3 text-left"
+              onclick="toggleAccordion(2)"
+            >
+              <span class="text-xl text-[#2405F2] pr-[32px]">02</span>
+              <span class="text-lg desktop:text-2xl text-[#282938]">
+                What is your class naming convention?
+              </span>
+              <span id="icon-2" class="ml-auto transition-transform transform"
+                >+</span
+              >
+            </button>
+            <div
+              id="content-2"
+              class="px-4 mobail:px-8 desktop:px-16 py-2 text-[#282938] hidden"
+            >
+              Content for question 2.
+            </div>
+          </div>
+
+          <!-- Accordion Item 3 -->
+          <div class="border-b border-[#ECECF1] rounded-md mb-4">
+            <button
+              class="w-full flex items-center px-4 py-3 text-left"
+              onclick="toggleAccordion(3)"
+            >
+              <span class="text-xl text-[#2405F2] pr-[32px]">03</span>
+              <span class="text-lg desktop:text-2xl text-[#282938]">
+                How do you communicate?
+              </span>
+              <span id="icon-3" class="ml-auto transition-transform transform"
+                >+</span
+              >
+            </button>
+            <div
+              id="content-3"
+              class="px-4 mobail:px-8 desktop:px-16 py-2 text-[#282938] hidden"
+            >
+              Content for question 3.
+            </div>
+          </div>
+
+          <!-- Accordion Item 4 -->
+          <div class="border-b border-[#ECECF1] rounded-md mb-4">
+            <button
+              class="w-full flex items-center px-4 py-3 text-left"
+              onclick="toggleAccordion(4)"
+            >
+              <span class="text-xl text-[#2405F2] pr-[32px]">04</span>
+              <span class="text-lg desktop:text-2xl text-[#282938]">
+                I have a bigger project. Can you handle it?
+              </span>
+              <span id="icon-4" class="ml-auto transition-transform transform"
+                >+</span
+              >
+            </button>
+            <div
+              id="content-4"
+              class="px-4 mobail:px-8 desktop:px-16 py-2 text-[#282938] hidden"
+            >
+              Content for question 4.
+            </div>
+          </div>
+
+          <!-- Accordion Item 5 -->
+          <div class="border-b border-[#ECECF1] rounded-md mb-4">
+            <button
+              class="w-full flex items-center px-4 py-3 text-left"
+              onclick="toggleAccordion(5)"
+            >
+              <span class="text-xl text-[#2405F2] pr-[32px]">05</span>
+              <span class="text-lg desktop:text-2xl text-[#282938]">
+                What is your class naming convention?
+              </span>
+              <span id="icon-5" class="ml-auto transition-transform transform"
+                >+</span
+              >
+            </button>
+            <div
+              id="content-5"
+              class="px-4 mobail:px-8 desktop:px-16 py-2 text-[#282938] hidden"
+            >
+              Content for question 5.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleAccordion(id) {
+        const content = document.getElementById(`content-${id}`);
+        const icon = document.getElementById(`icon-${id}`);
+        const isHidden = content.classList.contains("hidden");
+
+        // Close all accordion items
+        document
+          .querySelectorAll('[id^="content-"]')
+          .forEach((el) => el.classList.add("hidden"));
+        document
+          .querySelectorAll('[id^="icon-"]')
+          .forEach((el) => (el.textContent = "+"));
+
+        // Toggle the clicked item
+        if (isHidden) {
+          content.classList.remove("hidden");
+          icon.textContent = "×";
+        }
+      }
+    </script>
+
+    <!-- end FAQ -->
+    <!-- contact us -->
+    <div class="w-full flex flex-col font-[poppins]">
+      <div
+        class="container flex flex-col desktop:flex-row items-stretch h-auto"
+      >
+        <div class="w-full desktop:w-1/2 h-full">
+          <div class="relative group overflow-hidden h-full">
+            <img
+              class="w-full h-[300px] object-cover desktop:h-full"
+              src="./public/css/partials/images/home/woman-writing-on-paper-3228878.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-0 left-[-100%] h-full w-full bg-gradient-to-tl from-[#1C1E53] to-[#1C1E536B] bg-opacity-70 flex flex-col justify-center text-white transition-all duration-500 ease-in-out group-hover:left-0 items-start"
+            >
+              <h2
+                class="opacity-0 translate-y-8 transition-all duration-500 delay-200 group-hover:opacity-100 group-hover:translate-y-0 text-2xl desktop:text-5xl font-semibold mobail:pl-4 desktop:pl-[48px]"
+              >
+                Building stellar websites for early startups
+              </h2>
+              <p
+                class="opacity-0 translate-y-8 transition-all duration-500 delay-300 group-hover:opacity-100 group-hover:translate-y-0 text-sm desktop:pl-[48px] py-[16px] mobail:pl-4 desktop:mr-[18px]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua ut
+                enim.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- قسمت متن -->
+        <div
+          class="w-full desktop:w-1/2 bg-[#1C1E53] flex flex-col justify-center pl-4 pr-4 desktop:pl-[48px] desktop:pr-[24px] text-white h-full "
+        >
+          <span
+            class="text-lg desktop:text-2xl font-semibold mb-4 mt-6 desktop:mt-[80px]"
+            >Send inquiry</span
+          >
+          <span class="text-sm desktop:text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore.
+          </span>
+          <div class="mt-6">
+            <button
+              class="bg-backgroundHero border w-full border-gray-600 rounded-[8px] px-4 py-2 hover:border-[#FCD980] hover:text-[#FCD980] transition duration-300 text-left text-gray-600 mb-[16px] h-[64px]"
+            >
+              YOUR NAME
+            </button>
+            <button
+              class="bg-backgroundHero border w-full border-gray-600 rounded-[8px] px-4 py-2 hover:border-[#FCD980] hover:text-[#FCD980] transition duration-300 text-left text-gray-600 mb-[16px] h-[64px]"
+            >
+              Email
+            </button>
+            <button
+              class="bg-backgroundHero border w-full border-gray-600 rounded-[8px] px-4 py-2 hover:border-[#FCD980] hover:text-[#FCD980] transition duration-300 text-left text-gray-600 mb-[40px] h-[64px]"
+            >
+              Paste your Figma design URL
+            </button>
+            <button
+              class="bg-[#FCD980] border w-full rounded-[40px] px-6 py-2 hover:bg-backgroundHero hover:text-white transition duration-300 text-backgroundHero mb-[16px] text-center h-[64px]"
+            >
+              Send an inquiry
+            </button>
+          </div>
+          <a
+            href="#"
+            class="w-full flex flex-wrap items-center justify-center hover:text-[#FCD980] pb-1"
+            >Get in touch with us
+            <img
+              src="./public/css/partials/images/home/ar.svg"
+              alt="Arrow"
+              class="ml-2 flex"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end contact us -->
+
+    <!-- our blog -->
+    <div class="w-full py-[128px] font-[poppins]">
+      <div class="container">
+        <h5 class="text-4xl text-[#282938] font-semibold mb-[64px] text-start">
+          Our blog
+        </h5>
+        <div class="flex flex-wrap -mx-4">
+          <div class="w-full mobail:w-full desktop:w-1/3 px-4 mb-[40px]">
+            <div class="flex flex-col">
+              <img
+                class="w-full h-[285px] mb-[24px] object-cover"
+                src="./public/css/partials/images/home/1st.jpeg"
+                alt="Blog Image 1"
+              />
+              <span class="text-gray-600 font-medium text-sm mb-[8px]">
+                19 Jan 2022
+              </span>
+              <p class="text-2xl text-[#282938] font-semibold mb-[16px]">
+                How one Webflow user grew his single person consultancy from
+                $0-100K in 14 months
+              </p>
+              <p class="text-gray-600 text-sm mb-[24px]">
+                See how pivoting to Webflow changed one person’s sales strategy
+                and allowed him to attract
+              </p>
+              <a
+                href="#"
+                class="flex items-center text-[#1C1E53] hover:underline"
+              >
+                Read more
+                <img
+                  src="./public/css/partials/images/home/Arrow 1 (1).svg"
+                  alt="Arrow"
+                  class="ml-2 w-[16px]"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="w-full mobail:w-full desktop:w-1/3 px-4 mb-[40px]">
+            <div class="flex flex-col">
+              <img
+                class="w-full h-[285px] mb-[24px] object-cover"
+                src="./public/css/partials/images/home/2nd.jpeg"
+                alt="Blog Image 2"
+              />
+              <span class="text-gray-600 font-medium text-sm mb-[8px]">
+                19 Jan 2022
+              </span>
+              <p class="text-2xl text-[#282938] font-semibold mb-[16px]">
+                How one Webflow user grew his single person consultancy from
+                $0-100K in 14 months
+              </p>
+              <p class="text-gray-600 text-sm mb-[24px]">
+                See how pivoting to Webflow changed one person’s sales strategy
+                and allowed him to attract
+              </p>
+              <a
+                href="#"
+                class="flex items-center text-[#1C1E53] hover:underline"
+              >
+                Read more
+                <img
+                  src="./public/css/partials/images/home/Arrow 1 (1).svg"
+                  alt="Arrow"
+                  class="ml-2 w-[16px]"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="w-full mobail:w-full desktop:w-1/3 px-4 mb-[40px]">
+            <div class="flex flex-col">
+              <img
+                class="w-full h-[285px] mb-[24px] object-cover"
+                src="./public/css/partials/images/home/3rd.jpeg"
+                alt="Blog Image 3"
+              />
+              <span class="text-gray-600 font-medium text-sm mb-[8px]">
+                19 Jan 2022
+              </span>
+              <p class="text-2xl text-[#282938] font-semibold mb-[16px]">
+                How one Webflow user grew his single person consultancy from
+                $0-100K in 14 months
+              </p>
+              <p class="text-gray-600 text-sm mb-[24px]">
+                See how pivoting to Webflow changed one person’s sales strategy
+                and allowed him to attract
+              </p>
+              <a
+                href="#"
+                class="flex items-center text-[#1C1E53] hover:underline"
+              >
+                Read more
+                <img
+                  src="./public/css/partials/images/home/Arrow 1 (1).svg"
+                  alt="Arrow"
+                  class="ml-2 w-[16px]"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end our blog -->
+
+    <!-- footer -->
+    <div class="w-full flex flex-wrap bg-backgroundHero font-[poppins]">
+      <div class="container flex flex-wrap desktop:flex-nowrap">
+        <div class="w-full desktop:w-1/2 mb-8 desktop:mb-0">
+          <img
+            class="mb-[16px] mt-[40px] desktop:mt-[104px]"
+            src="./public/css/partials/images/hero-home/logo.svg"
+            alt=""
+          />
+          <p
+            class="text-white opacity-70 mb-[24px] desktop:mb-[86px] w-full desktop:w-[400px]"
+          >
+            We are always open to discuss your project and improve your online
+            presence.
+          </p>
+          <div
+            class="w-full desktop:w-[500px] h-auto desktop:h-[85px] bg-[#FCD980] flex flex-col desktop:flex-row p-4 desktop:p-0"
+          >
+            <span
+              class="pb-4 desktop:pb-0 desktop:pt-[18px] desktop:pl-[38px] text-[#282938]"
+            >
+              Email me at
+              <br />
+              contact@website.com
+            </span>
+            <span class="desktop:pt-[18px] desktop:pl-[38px] text-[#282938]">
+              Call us
+              <br />
+              0927 6277 28525
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="w-full desktop:w-1/2 flex flex-col mt-[24px] desktop:mt-[96px] pl-[16px] desktop:pl-[32px]"
+        >
+          <span
+            class="text-white text-[32px] desktop:text-[48px] font-semibold mb-[8px] desktop:mb-[16px]"
+          >
+            Lets Talk!
+          </span>
+          <p
+            class="text-white text-opacity-70 text-[14px] leading-[20px] desktop:text-[16px] desktop:leading-[24px]"
+          >
+            We are always open to discuss your project, improve your online
+            presence, and help with your UX/UI design challenges.
+          </p>
+          <a href="#" class="mt-[24px] desktop:mt-[42px]">
+            <img
+              src="./public/css/partials/images/home/Social Media Icon.svg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full flex font-[poppins] text-[#282938]">
+      <div
+        class="container flex flex-wrap desktop:flex-nowrap desktop:py-[32px] desktop:justify-between"
+      >
+        <div
+          class="w-full desktop:w-1/2 text-center desktop:text-left mb-4 desktop:mb-0"
+        >
+          <p class="text-[14px] desktop:text-[16px]">
+            Copyright 2022, Finsweet.com
+          </p>
+        </div>
+
+        <div
+          class="w-full desktop:w-1/2 flex flex-wrap desktop:flex-nowrap justify-center desktop:justify-end items-center"
+        >
+          <a
+            href="#"
+            class="mb-2 desktop:mb-0 desktop:pr-[32px] hover:underline text-[14px] desktop:text-[16px]"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="mb-2 desktop:mb-0 desktop:pr-[32px] hover:underline text-[14px] desktop:text-[16px]"
+            >About us</a
+          >
+          <a
+            href="#"
+            class="mb-2 desktop:mb-0 desktop:pr-[32px] hover:underline text-[14px] desktop:text-[16px]"
+            >Features</a
+          >
+          <a
+            href="#"
+            class="mb-2 desktop:mb-0 desktop:pr-[32px] hover:underline text-[14px] desktop:text-[16px]"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="mb-2 desktop:mb-0 desktop:pr-[32px] hover:underline text-[14px] desktop:text-[16px]"
+            >FAQ</a
+          >
+          <a href="#" class="hover:underline text-[14px] desktop:text-[16px]"
+            >Blog</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- end footer -->
+
+    <!-- End Project -->
+
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      // Toggle menu for mobile
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+      const closeBtn = document.getElementById("close-btn");
+      menuBtn.addEventListener("click", () => {
+        menu.classList.add("mobile-menu");
+        menu.classList.add("show");
+      });
+      closeBtn.addEventListener("click", () => {
+        menu.classList.remove("mobile-menu");
+        menu.classList.remove("show");
+      });
+      function toggleAccordion(id) {
+        const content = document.getElementById(`content-${id}`);
+        const icon = document.getElementById(`icon-${id}`);
+        const isHidden = content.classList.contains("hidden");
+
+        // Close all accordion items
+        document
+          .querySelectorAll('[id^="content-"]')
+          .forEach((el) => el.classList.add("hidden"));
+        document
+          .querySelectorAll('[id^="icon-"]')
+          .forEach((el) => (el.textContent = "+"));
+
+        // Toggle the clicked item
+        if (isHidden) {
+          content.classList.remove("hidden");
+          icon.textContent = "×";
+        }
+      }
+    </script>
+  </body>
+</html>

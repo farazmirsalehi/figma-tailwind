@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/output.css" />
+    <title>Pricing</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="w-full bg-backgroundHero flex flex-wrap font-[poppins]">
+      <!-- Navbar -->
+      <div class="container flex items-center justify-between py-4 font-[poppins]">
+        <!-- Logo -->
+        <div class="w-1/3">
+          <img
+            src="./public/css/partials/images/hero-home/logo.svg"
+            alt="Logo"
+          />
+        </div>
+        <!-- Hamburger Menu -->
+        <div class="block desktop:hidden">
+          <button
+            id="menu-btn"
+            class="text-[#BBBBCB] hover:text-white focus:outline-none font-[poppins]"
+          >
+            <svg
+              class="w-8 h-8"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+        <style>
+          .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #1c1e53;
+            display: none;
+            margin-top: 0px;
+            overflow-y: scroll;
+          }
+          .mobile-menu a {
+            width: 100%;
+            display: block;
+            padding: 30px;
+            color: #fff;
+            text-align: center;
+          }
+          .mobile-menu.show {
+            display: block;
+          }
+          .close-btn {
+            display: block;
+            width: 100%;
+            font-size: 28px;
+            color: white;
+            padding: 8px;
+            display: none;
+          }
+          .mobile-menu.show .close-btn {
+            display: block;
+          }
+        </style>
+        <!-- Navigation Links -->
+        <div
+          id="menu"
+          class="hidden flex-col items-start gap-4 mt-4 w-full desktop:flex desktop:flex-row desktop:justify-end desktop:items-center desktop:mt-0 font-[poppins] text-[16px] text-[#BBBBCB] font-[poppins]"
+        >
+          <a href="./index.html" class="hover:text-[#ffffff] font-[poppins]">Home</a>
+          <a href="./aboutus.html" class="hover:text-[#ffffff] font-[poppins]">About us</a>
+          <a href="./features.html" class="hover:text-[#ffffff] font-[poppins]">Features</a>
+          <a href="./pricing.html" class="text-[#ffffff] font-[poppins]">Pricing</a>
+          <a href="#" class="hover:text-[#ffffff]">FAQ</a>
+          <a href="./blogpage.html" class="hover:text-[#ffffff] font-[poppins]">Blog</a>
+          <a
+            href="./contactus.html"
+            class="px-4 py-2 border border-[#F4F6FC33] rounded-full hover:text-backgroundHero hover:bg-[#FCD980] hover:border-[#ffffff] tranlate duration-300 font-[poppins]"
+            >Contact us</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- heading -->
+    <div class="w-full flex">
+      <div class="container py-[128px] font-[poppins]">
+        <h2 class="text-5xl text-[#282938] font-semibold text-center font-[poppins]">
+          Our Pricing Plans
+        </h2>
+        <p
+          class="w-full sm:w-[560px] flex mx-auto py-[16px] text-[#282938] items-center justify-center"
+        >
+          When you’re ready to go beyond prototyping in Figma, Webflow is ready
+          to help you bring your designs to life — without coding them.
+        </p>
+      </div>
+    </div>
+
+    <!-- end heading -->
+
+    <!-- pricing -->
+    <div class="w-full">
+      <div class="container">
+        <div class="flex flex-wrap gap-6 justify-between font-[poppins]">
+          <!-- Box 1 -->
+          <div
+            class="w-full mobail:w-full desktop:w-[30%] bg-[#F4F6FC] rounded-[12px] p-6 font-[poppins]"
+          >
+            <div class="flex items-center gap-4">
+              <span class="text-[38px] font-semibold text-[#282938]">$299</span>
+              <span class="text-[#2405F2]">Per Design</span>
+            </div>
+            <span class="block mt-4 text-[#282938] text-[24px] font-semibold font-[poppins]">
+              Landing Page
+            </span>
+            <p class="mt-2 text-gray-600">
+              When you’re ready to go beyond prototyping in Figma,
+            </p>
+            <div class="mt-8 space-y-4">
+              <div class="flex items-center gap-4">
+                <img
+                  src="./public/css/partials/images/about us/Pointer.svg"
+                  alt=""
+                />
+                <p>All limited links</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img
+                  src="./public/css/partials/images/about us/Pointer.svg"
+                  alt=""
+                />
+                <p>All limited links</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img
+                  src="./public/css/partials/images/about us/Pointer.svg"
+                  alt=""
+                />
+                <p>All limited links</p>
+              </div>
+              <div class="flex items-center gap-4 opacity-60">
+                <img
+                  src="./public/css/partials/images/about us/Pointer2.svg"
+                  alt=""
+                />
+                <p>All limited links</p>
+              </div>
+              <div class="flex items-center gap-4 opacity-60">
+                <img
+                  src="./public/css/partials/images/about us/Pointer2.svg"
+                  alt=""
+                />
+                <p>All limited links</p>
+              </div>
+            </div>
+            <div class="mt-8 text-center">
+              <a
+                href="#"
+                class="py-3 px-6 bg-[#282938] text-white rounded-full hover:bg-[#2405F2] transition duration-300"
+              >
+                Contact us
+              </a>
+            </div>
+          </div>
+
+          <!-- Box 2 -->
+          <div
+            class="w-full mobail:w-full desktop:w-[30%] bg-[#1C1E53] rounded-[12px] p-6 font-[poppins]"
+          >
+            <div class="flex items-center gap-4">
+              <span class="text-[38px] font-semibold text-white">$299</span>
+              <span class="text-[#2405F2]">Per Design</span>
+            </div>
+            <span class="block mt-4 text-white text-[24px] font-semibold font-[poppins]">
+              Landing Page
+            </span>
+            <p class="mt-2 text-white opacity-75 font-[poppins]">
+              When you’re ready to go beyond prototyping in Figma,
+            </p>
+            <div class="mt-8 space-y-4">
+              <div class="flex items-center gap-4">
+                <img
+                  src="./public/css/partials/images/about us/Pointer.svg"
+                  alt=""
+                />
+                <p>All limited links</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img
+                  src="./public/css/partials/images/about us/Pointer.svg"
+                  alt=""
+                />
+                <p>All limited links</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img
+                  src="./public/css/partials/images/about us/Pointer.svg"
+                  alt=""
+                />
+                <p>All limited links</p>
+              </div>
+              <div class="flex items-center gap-4 opacity-60">
+                <img
+                  src="./public/css/partials/images/about us/Pointer2.svg"
+                  alt=""
+                />
+                <p>All limited links</p>
+              </div>
+              <div class="flex items-center gap-4 opacity-60">
+                <img
+                  src="./public/css/partials/images/about us/Pointer2.svg"
+                  alt=""
+                />
+                <p>All limited links</p>
+              </div>
+            </div>
+            <div class="mt-8 text-center">
+              <a
+                href="#"
+                class="py-3 px-6 bg-[#FCD980] text-[#282938] rounded-full hover:bg-[#282938] hover:text-white transition duration-300 font-[poppins]"
+              >
+                Contact us
+              </a>
+            </div>
+          </div>
+
+          <!-- Box 3 -->
+          <div
+            class="w-full mobail:w-full desktop:w-[30%] bg-[#F4F6FC] rounded-[12px] p-6 font-[poppins]"
+          >
+            <div class="flex items-center gap-4">
+              <span class="text-[38px] font-semibold text-[#282938] font-[poppins]">$299</span>
+              <span class="text-[#2405F2]">Per Design</span>
+            </div>
+            <span class="block mt-4 text-[#282938] text-[24px] font-semibold font-[poppins]">
+              Landing Page
+            </span>
+            <p class="mt-2 text-gray-600">
+              When you’re ready to go beyond prototyping in Figma,
+            </p>
+            <div class="mt-8 space-y-4">
+              <div class="flex items-center gap-4">
+                <img
+                  src="./public/css/partials/images/about us/Pointer.svg"
+                  alt=""
+                />
+                <p>All limited links</p>
+              </div>
+              <div class="flex items-center gap-4 font-[poppins]">
+                <img
+                  src="./public/css/partials/images/about us/Pointer.svg"
+                  alt=""
+                />
+                <p>All limited links</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img
+                  src="./public/css/partials/images/about us/Pointer.svg"
+                  alt=""
+                />
+                <p>All limited links</p>
+              </div>
+              <div class="flex items-center gap-4 opacity-60">
+                <img
+                  src="./public/css/partials/images/about us/Pointer2.svg"
+                  alt=""
+                />
+                <p>All limited links</p>
+              </div>
+              <div class="flex items-center gap-4 opacity-60">
+                <img
+                  src="./public/css/partials/images/about us/Pointer2.svg"
+                  alt=""
+                />
+                <p>All limited links</p>
+              </div>
+            </div>
+            <div class="mt-8 text-center font-[poppins]">
+              <a
+                href="#"
+                class="py-3 px-6 bg-[#282938] text-white rounded-full hover:bg-[#2405F2] transition duration-300 font-[poppins]"
+              >
+                Contact us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end pricing -->
+
+    <!-- FAQ -->
+    <div class="w-full flex flex-col font-[poppins] py-[128px] font-[poppins]">
+      <div
+        class="container py-[64px] mobail:py-[32px] flex flex-wrap mobail:flex-col desktop:flex-row desktop:justify-between desktop:items-start font-[poppins]"
+      >
+        <!-- Left Section (Title) -->
+        <div class="w-full desktop:w-1/3 mobail:mb-8 desktop:pr-8 font-[poppins]">
+          <h4
+            class="text-[#282938] font-semibold text-3xl mobail:text-2xl pb-[16px] font-[poppins]"
+          >
+            Frequently asked questions
+          </h4>
+          <span class="text-[#2405F2] text-base">Contact us for more info</span>
+        </div>
+
+        <!-- Right Section (Accordion) -->
+        <div class="w-full desktop:w-2/3">
+          <!-- Accordion Item 1 -->
+          <div class="border-b border-[#ECECF1] rounded-md mb-4 font-[poppins]">
+            <button
+              class="w-full flex items-center px-4 py-3 text-left font-[poppins]"
+              onclick="toggleAccordion(1)"
+            >
+              <span class="text-xl text-[#2405F2] pr-[32px]">01</span>
+              <span class="text-lg desktop:text-2xl text-[#282938]">
+                How much time does it take?
+              </span>
+              <span id="icon-1" class="ml-auto transition-transform transform font-[poppins]"
+                >+</span
+              >
+            </button>
+            <div
+              id="content-1"
+              class="px-4 mobail:px-8 desktop:px-16 py-2 text-[#282938] hidden font-[poppins]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+
+          <!-- Accordion Item 2 -->
+          <div class="border-b border-[#ECECF1] rounded-md mb-4 font-[poppins]">
+            <button
+              class="w-full flex items-center px-4 py-3 text-left font-[poppins]"
+              onclick="toggleAccordion(2)"
+            >
+              <span class="text-xl text-[#2405F2] pr-[32px]">02</span>
+              <span class="text-lg desktop:text-2xl text-[#282938]">
+                What is your class naming convention?
+              </span>
+              <span id="icon-2" class="ml-auto transition-transform transform font-[poppins]"
+                >+</span
+              >
+            </button>
+            <div
+              id="content-2"
+              class="px-4 mobail:px-8 desktop:px-16 py-2 text-[#282938] hidden font-[poppins]"
+            >
+              Content for question 2.
+            </div>
+          </div>
+
+          <!-- Accordion Item 3 -->
+          <div class="border-b border-[#ECECF1] rounded-md mb-4">
+            <button
+              class="w-full flex items-center px-4 py-3 text-left font-[poppins]"
+              onclick="toggleAccordion(3)"
+            >
+              <span class="text-xl text-[#2405F2] pr-[32px] font-[poppins]">03</span>
+              <span class="text-lg desktop:text-2xl text-[#282938] font-[poppins]">
+                How do you communicate?
+              </span>
+              <span id="icon-3" class="ml-auto transition-transform transform font-[poppins]"
+                >+</span
+              >
+            </button>
+            <div
+              id="content-3"
+              class="px-4 mobail:px-8 desktop:px-16 py-2 text-[#282938] hidden font-[poppins]"
+            >
+              Content for question 3.
+            </div>
+          </div>
+
+          <!-- Accordion Item 4 -->
+          <div class="border-b border-[#ECECF1] rounded-md mb-4 font-[poppins]">
+            <button
+              class="w-full flex items-center px-4 py-3 text-left font-[poppins]"
+              onclick="toggleAccordion(4)"
+            >
+              <span class="text-xl text-[#2405F2] pr-[32px] font-[poppins]">04</span>
+              <span class="text-lg desktop:text-2xl text-[#282938]">
+                I have a bigger project. Can you handle it?
+              </span>
+              <span id="icon-4" class="ml-auto transition-transform transform font-[poppins]"
+                >+</span
+              >
+            </button>
+            <div
+              id="content-4"
+              class="px-4 mobail:px-8 desktop:px-16 py-2 text-[#282938] hidden font-[poppins]"
+            >
+              Content for question 4.
+            </div>
+          </div>
+
+          <!-- Accordion Item 5 -->
+          <div class="border-b border-[#ECECF1] rounded-md mb-4 font-[poppins]">
+            <button
+              class="w-full flex items-center px-4 py-3 text-left"
+              onclick="toggleAccordion(5)"
+            >
+              <span class="text-xl text-[#2405F2] pr-[32px]">05</span>
+              <span class="text-lg desktop:text-2xl text-[#282938]">
+                What is your class naming convention?
+              </span>
+              <span id="icon-5" class="ml-auto transition-transform transform font-[poppins]"
+                >+</span
+              >
+            </button>
+            <div
+              id="content-5"
+              class="px-4 mobail:px-8 desktop:px-16 py-2 text-[#282938] hidden font-[poppins]"
+            >
+              Content for question 5.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleAccordion(id) {
+        const content = document.getElementById(`content-${id}`);
+        const icon = document.getElementById(`icon-${id}`);
+        const isHidden = content.classList.contains("hidden");
+
+        // Close all accordion items
+        document
+          .querySelectorAll('[id^="content-"]')
+          .forEach((el) => el.classList.add("hidden"));
+        document
+          .querySelectorAll('[id^="icon-"]')
+          .forEach((el) => (el.textContent = "+"));
+
+        // Toggle the clicked item
+        if (isHidden) {
+          content.classList.remove("hidden");
+          icon.textContent = "×";
+        }
+      }
+    </script>
+    <!-- end FAQ -->
+
+    <!-- footer -->
+    <div class="w-full flex flex-wrap bg-backgroundHero font-[poppins]">
+      <div class="container flex flex-wrap desktop:flex-nowrap">
+        <div class="w-full desktop:w-1/2 mb-8 desktop:mb-0">
+          <img
+            class="mb-[16px] mt-[40px] desktop:mt-[104px]"
+            src="./public/css/partials/images/hero-home/logo.svg"
+            alt=""
+          />
+          <p
+            class="text-white opacity-70 mb-[24px] desktop:mb-[86px] w-full desktop:w-[400px]"
+          >
+            We are always open to discuss your project and improve your online
+            presence.
+          </p>
+          <div
+            class="w-full desktop:w-[500px] h-auto desktop:h-[85px] bg-[#FCD980] flex flex-col desktop:flex-row p-4 desktop:p-0 font-[poppins]"
+          >
+            <span
+              class="pb-4 desktop:pb-0 desktop:pt-[18px] desktop:pl-[38px] text-[#282938] font-[poppins]"
+            >
+              Email me at
+              <br />
+              contact@website.com
+            </span>
+            <span class="desktop:pt-[18px] desktop:pl-[38px] text-[#282938] font-[poppins]">
+              Call us
+              <br />
+              0927 6277 28525
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="w-full desktop:w-1/2 flex flex-col mt-[24px] desktop:mt-[96px] pl-[16px] desktop:pl-[32px] font-[poppins]"
+        >
+          <span
+            class="text-white text-[32px] desktop:text-[48px] font-semibold mb-[8px] desktop:mb-[16px] font-[poppins]"
+          >
+            Lets Talk!
+          </span>
+          <p
+            class="text-white text-opacity-70 text-[14px] leading-[20px] desktop:text-[16px] desktop:leading-[24px] font-[poppins]"
+          >
+            We are always open to discuss your project, improve your online
+            presence, and help with your UX/UI design challenges.
+          </p>
+          <a href="#" class="mt-[24px] desktop:mt-[42px]">
+            <img
+              src="./public/css/partials/images/home/Social Media Icon.svg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full flex font-[poppins] text-[#282938] font-[poppins]">
+      <div
+        class="container flex flex-wrap desktop:flex-nowrap desktop:py-[32px] desktop:justify-between font-[poppins]"
+      >
+        <div
+          class="w-full desktop:w-1/2 text-center desktop:text-left mb-4 desktop:mb-0 font-[poppins]"
+        >
+          <p class="text-[14px] desktop:text-[16px] font-[poppins]">
+            Copyright 2022, Finsweet.com
+          </p>
+        </div>
+
+        <div
+          class="w-full desktop:w-1/2 flex flex-wrap desktop:flex-nowrap justify-center desktop:justify-end items-center font-[poppins]"
+        >
+          <a
+            href="#"
+            class="mb-2 desktop:mb-0 desktop:pr-[32px] hover:underline text-[14px] desktop:text-[16px] font-[poppins]"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="mb-2 desktop:mb-0 desktop:pr-[32px] hover:underline text-[14px] desktop:text-[16px] font-[poppins]"
+            >About us</a
+          >
+          <a
+            href="#"
+            class="mb-2 desktop:mb-0 desktop:pr-[32px] hover:underline text-[14px] desktop:text-[16px] font-[poppins]"
+            >Features</a
+          >
+          <a
+            href="#"
+            class="mb-2 desktop:mb-0 desktop:pr-[32px] hover:underline text-[14px] desktop:text-[16px] font-[poppins]"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="mb-2 desktop:mb-0 desktop:pr-[32px] hover:underline text-[14px] desktop:text-[16px] font-[poppins]"
+            >FAQ</a 
+          >
+          <a href="#" class="hover:underline text-[14px] desktop:text-[16px] font-[poppins]"
+            >Blog</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- end footer -->
+  </body>
+  <script src="./swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    // Toggle menu for mobile
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+    const closeBtn = document.getElementById("close-btn");
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add("mobile-menu");
+      menu.classList.add("show");
+    });
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove("mobile-menu");
+      menu.classList.remove("show");
+    });
+    function toggleAccordion(id) {
+      const content = document.getElementById(`content-${id}`);
+      const icon = document.getElementById(`icon-${id}`);
+      const isHidden = content.classList.contains("hidden");
+
+      // Close all accordion items
+      document
+        .querySelectorAll('[id^="content-"]')
+        .forEach((el) => el.classList.add("hidden"));
+      document
+        .querySelectorAll('[id^="icon-"]')
+        .forEach((el) => (el.textContent = "+"));
+
+      // Toggle the clicked item
+      if (isHidden) {
+        content.classList.remove("hidden");
+        icon.textContent = "×";
+      }
+    }
+  </script>
+</html>

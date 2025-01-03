@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/output.css" />
+    <title>About us</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="w-full bg-backgroundHero flex flex-wrap font-[poppins]">
+      <!-- Navbar -->
+      <div class="container flex items-center justify-between py-4">
+        <!-- Logo -->
+        <div class="w-1/3">
+          <img
+            src="./public/css/partials/images/hero-home/logo.svg"
+            alt="Logo"
+          />
+        </div>
+        <!-- Hamburger Menu -->
+        <div class="block desktop:hidden">
+          <button
+            id="menu-btn"
+            class="text-[#BBBBCB] hover:text-white focus:outline-none"
+          >
+            <svg
+              class="w-8 h-8"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+        <style>
+          .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #1c1e53;
+            display: none;
+            margin-top: 0px;
+            overflow-y: scroll;
+          }
+          .mobile-menu a {
+            width: 100%;
+            display: block;
+            padding: 30px;
+            color: #fff;
+            text-align: center;
+          }
+          .mobile-menu.show {
+            display: block;
+          }
+          .close-btn {
+            display: block;
+            width: 100%;
+            font-size: 28px;
+            color: white;
+            padding: 8px;
+            display: none;
+          }
+          .mobile-menu.show .close-btn {
+            display: block;
+          }
+        </style>
+        <!-- Navigation Links -->
+        <div
+          id="menu"
+          class="hidden flex-col items-start gap-4 mt-4 w-full desktop:flex desktop:flex-row desktop:justify-end desktop:items-center desktop:mt-0 font-[poppins] text-[16px] text-[#BBBBCB]"
+        >
+          <a href="./index.html" class="hover:text-[#ffffff]">Home</a>
+          <a href="./aboutus.html" class="text-[#ffffff]">About us</a>
+          <a href="./features.html" class="hover:text-[#ffffff]">Features</a>
+          <a href="./pricing.html" class="hover:text-[#ffffff]">Pricing</a>
+          <a href="#" class="hover:text-[#ffffff]">FAQ</a>
+          <a href="./blogpage.html" class="hover:text-[#ffffff]">Blog</a>
+          <a
+            href="./contactus.html"
+            class="px-4 py-2 border border-[#F4F6FC33] rounded-full hover:text-backgroundHero hover:bg-[#FCD980] hover:border-[#ffffff] tranlate duration-300"
+            >Contact us</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- hero -->
+    <div class="w-full py-[128px] font-[poppins]">
+      <div class="container flex flex-wrap desktop:flex-nowrap">
+        <div
+          class="w-full mobail:w-full desktop:w-1/2 pr-0 mobail:pr-0 desktop:pr-[100px]"
+        >
+          <span class="text-[18px] text-[#282938] font-[poppins]">About us</span>
+          <h3
+            class="text-[#282938] font-semibold text-[36px] desktop:text-[54px]"
+          >
+            Our designs solve problems
+          </h3>
+          <p class="text-[#282938] py-[16px] opacity-70">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+        <div
+          class="w-full mobail:w-full desktop:w-1/2 mt-8 desktop:mt-0 flex justify-center items-center"
+        >
+          <div
+            class="w-full mobail:w-[300px] desktop:w-[550px] h-[200px] mobail:h-[200px] desktop:h-[340px] object-cover"
+          >
+            <img
+              class="object-cover w-full h-full"
+              src="./public/css/partials/images/about us/1.jpeg"
+              alt="About Us"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end hero -->
+
+    <!-- who we are -->
+    <div class="w-full font-[poppins]">
+      <div class="container">
+        <div
+          class="w-full py-[80px] flex flex-wrap desktop:flex-nowrap bg-[#F4F5F5]"
+        >
+          <div
+            class="w-full mobail:w-full desktop:w-1/2 pr-0 mobail:pr-0 desktop:pr-[100px] desktop:pl-[80px]"
+          >
+            <span class="text-[16px] text-[#282938] font-semibold">
+              Who we are?
+            </span>
+            <h3
+              class="text-[#282938] font-semibold text-[36px] desktop:text-[38px]"
+            >
+              Goal focussed
+            </h3>
+            <p class="text-[#282938] opacity-70 text-[16px] mt-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+          <div class="w-full mobail:w-full desktop:w-1/2 pr-0 mobail:pr-0">
+            <span class="text-[16px] text-[#F4F5F5] font-semibold">
+              Who we are?
+            </span>
+            <h3
+              class="text-[#282938] font-semibold text-[36px] desktop:text-[38px]"
+            >
+              Continuous improvement
+            </h3>
+            <p class="text-[#282938] opacity-70 text-[16px] mt-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+        </div>
+        <div class="w-full h-[340px]">
+          <img
+            class="w-full h-full object-cover"
+            src="./public/css/partials/images/about us/2.jpeg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- end who we are -->
+
+    <!-- process -->
+    <div class="w-full py-[128px] font-[poppins]">
+      <div class="container">
+        <h2 class="text-5xl font-semibold text-[#282938] text-center mb-12">
+          The process we follow
+        </h2>
+        <div
+          class="flex flex-wrap desktop:flex-nowrap justify-center gap-6 desktop:gap-20"
+        >
+          <div class="w-full desktop:w-1/4 py-[48px]">
+            <img
+              class="pb-[32px] mx-auto"
+              src="./public/css/partials/images/about us/Line and Icon.jpg"
+              alt=""
+            />
+            <h5
+              class="pb-[8px] text-2xl text-[#282938] font-semibold text-left"
+            >
+              Planning
+            </h5>
+            <p class="text-[#282938] opacity-70 text-left">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+            </p>
+          </div>
+          <div class="w-full desktop:w-1/4 py-[48px] font-[poppins]">
+            <img
+              class="pb-[32px] mx-auto"
+              src="./public/css/partials/images/about us/Line and Icon.jpg"
+              alt=""
+            />
+            <h5
+              class="pb-[8px] text-2xl text-[#282938] font-semibold text-left"
+            >
+              Conception
+            </h5>
+            <p class="text-[#282938] opacity-70 text-left">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+            </p>
+          </div>
+          <div class="w-full desktop:w-1/4 py-[48px] font-[poppins]">
+            <img
+              class="pb-[32px] mx-auto"
+              src="./public/css/partials/images/about us/Line and Icon.jpg"
+              alt=""
+            />
+            <h5
+              class="pb-[8px] text-2xl text-[#282938] font-semibold text-left"
+            >
+              Design
+            </h5>
+            <p class="text-[#282938] opacity-70 text-left">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+            </p>
+          </div>
+          <div class="w-full desktop:w-1/4 py-[48px]">
+            <img
+              class="pb-[32px] mx-auto"
+              src="./public/css/partials/images/about us/Line and Icon.jpg"
+              alt=""
+            />
+            <h5
+              class="pb-[8px] text-2xl text-[#282938] font-semibold text-left"
+            >
+              Development
+            </h5>
+            <p class="text-[#282938] opacity-70 text-left">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end process -->
+
+    <!-- mission -->
+    <div class="w-full bg-[#EEF4FA] font-[poppins]">
+      <div class="container">
+        <div
+          class="w-full flex flex-wrap desktop:flex-nowrap pt-[64px] desktop:pt-[128px] justify-between items-center"
+        >
+          <div class="w-full desktop:w-1/2 mb-6 desktop:mb-0">
+            <span class="text-[#282938]">Our Mission </span>
+            <h3
+              class="font-semibold text-[#282938] text-2xl desktop:text-4xl pt-[16px]"
+            >
+              Inspire, Innovate, Share
+            </h3>
+            <p
+              class="text-[#282938] opacity-70 text-[14px] desktop:text-[16px] mt-4"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="w-full desktop:w-[515px] h-[200px] desktop:h-[280px] font-[poppins] ">
+            <img
+              class="w-full h-full object-cover"
+              src="./public/css/partials/images/about us/3.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="w-full flex flex-wrap desktop:flex-nowrap flex-row-reverse pt-[64px] desktop:pt-[128px] justify-between items-center font-[poppins]"
+        >
+          <div class="w-full desktop:w-1/2 mb-6 desktop:mb-0 font-[poppins]">
+            <span class="text-[#282938]">Our Vision </span>
+            <h3
+              class="font-semibold text-[#282938] text-2xl desktop:text-4xl pt-[16px]"
+            >
+              Inspire, Innovate, Share
+            </h3>
+            <p
+              class="text-[#282938] opacity-70 text-[14px] desktop:text-[16px] mt-4"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="w-full desktop:w-[515px] h-[200px] desktop:h-[280px] font-[poppins]">
+            <img
+              class="w-full h-full object-cover"
+              src="./public/css/partials/images/about us/4.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end mission -->
+
+    <!-- benefit -->
+    <div class="w-full py-[128px] font-[poppins]">
+      <div class="container">
+        <h2
+          class="desktop:text-5xl mobail:text-2xl font-semibold text-[#282938] text-center max-w-[90%] desktop:w-[630px] mx-auto pb-[48px]"
+        >
+          The benefits of working with us
+        </h2>
+
+        <div
+          class="w-full flex flex-wrap font-[poppins] bg-white justify-center gap-6 desktop:justify-between font-[poppins]"
+        >
+          <div
+            class="w-full mobail:w-[90%] desktop:w-[30%] bg-[#F4F6FC] px-6 pt-8 pb-4 rounded-md shadow-sm font-[poppins]"
+          >
+            <img
+              class="pb-4 mx-auto desktop:mx-0"
+              src="./public/css/partials/images/home/Icon (1).svg"
+              alt=""
+            />
+            <h3 class="text-xl font-semibold text-[#282938] pb-2">
+              Uses Client First
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi.
+            </p>
+          </div>
+
+          <div
+            class="w-full mobail:w-[90%] desktop:w-[30%] bg-[#F4F6FC] px-6 pt-8 pb-4 rounded-md shadow-sm font-[poppins]"
+          >
+            <img
+              class="pb-4 mx-auto desktop:mx-0"
+              src="./public/css/partials/images/home/Icon (1).svg"
+              alt=""
+            />
+            <h3 class="text-xl font-semibold text-[#282938] pb-2">
+              Uses Client First
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi.
+            </p>
+          </div>
+
+          <div
+            class="w-full mobail:w-[90%] desktop:w-[30%] bg-[#F4F6FC] px-6 pt-8 pb-4 rounded-md shadow-sm font-[poppins]"
+          >
+            <img
+              class="pb-4 mx-auto desktop:mx-0"
+              src="./public/css/partials/images/home/Icon (1).svg"
+              alt=""
+            />
+            <h3 class="text-xl font-semibold text-[#282938] pb-2">
+              Uses Client First
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi.
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full bg-white py-12 font-[poppins]">
+          <div
+            class="mx-auto flex flex-wrap mobail:flex-col desktop:flex-row items-center justify-between gap-8"
+          >
+            <!-- متن سمت چپ -->
+            <div
+              class="text-left mobail:text-center mobail:w-full desktop:w-auto font-[poppins]"
+            >
+              <h3 class="text-4xl mobail:text-3xl font-bold text-gray-900 font-[poppins]">
+                100.000+
+              </h3>
+              <p class="text-gray-500 font-[poppins]">Finsweet Users</p>
+            </div>
+
+            <!-- لوگوها -->
+            <div
+              class="flex items-center justify-center mobail:justify-center gap-6 opacity-70 flex-wrap"
+            >
+              <img
+                src="./public/css/partials/images/about us/Logo 1.svg"
+                alt="Logo 1"
+                class="h-8"
+              />
+              <img
+                src="./public/css/partials/images/about us/Logo 2.svg"
+                alt="Logo 2"
+                class="h-8"
+              />
+              <img
+                src="./public/css/partials/images/about us/Logo 3.svg"
+                alt="Logo 3"
+                class="h-8"
+              />
+              <img
+                src="./public/css/partials/images/about us/Logo 4.svg"
+                alt="Logo 4"
+                class="h-8"
+              />
+              <img
+                src="./public/css/partials/images/about us/Logo 5.svg"
+                alt="Logo 5"
+                class="h-8"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end benefit -->
+
+    <!-- our team -->
+    <div class="w-full bg-[#F4F6FC] font-[poppins]">
+      <div class="container pb-[96px]">
+        <h3
+          class="desktop:text-5xl mobail:text-2xl font-semibold text-[#282938] text-center max-w-[90%] desktop:w-[630px] mx-auto pb-[48px] pt-[128px]"
+        >
+          Meet our team
+        </h3>
+        <div
+          class="flex flex-wrap desktop:flex-nowrap justify-center gap-6 desktop:gap-20"
+        >
+          <div class="w-full desktop:w-1/4 py-[48px] bg-white">
+            <div
+              class="relative w-[168px] h-[168px] rounded-[100%] overflow-hidden mx-auto group"
+            >
+              <!-- تصویر اصلی -->
+              <img
+                class="w-full h-full object-cover font-[poppins]"
+                src="./public/css/partials/images/about us/8.jpeg"
+                alt=""
+              />
+              <!-- دایره و گرادیانت هنگام هاور -->
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-[rgba(255,255,255,0.7)] to-[rgba(82,57,250,0.7)] rounded-[100%] flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-[poppins]"
+              >
+                <a href="#"
+                  ><img
+                    src="./public/css/partials/images/about us/Socials.svg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+
+            <span
+              class="text-[#1D2130] text-[24px] font-semibold text-center mx-auto justify-center flex pt-[12px]"
+              >Sara Hardin</span
+            >
+            <br />
+            <span class="text-center mx-auto justify-center flex text-gray-600"
+              >Project Manager</span
+            >
+          </div>
+          <div class="w-full desktop:w-1/4 py-[48px] bg-white font-[poppins]">
+            <div
+              class="relative w-[168px] h-[168px] rounded-[100%] overflow-hidden mx-auto group"
+            >
+              <!-- تصویر اصلی -->
+              <img
+                class="w-full h-full object-cover"
+                src="./public/css/partials/images/about us/7.jpeg"
+                alt=""
+              />
+              <!-- دایره و گرادیانت هنگام هاور -->
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-[rgba(255,255,255,0.7)] to-[rgba(82,57,250,0.7)] rounded-[100%] flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-[poppins]"
+              >
+                <a href="#"
+                  ><img
+                    src="./public/css/partials/images/about us/Socials.svg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+
+            <span
+              class="text-[#1D2130] text-[24px] font-semibold text-center mx-auto justify-center flex pt-[12px] font-[poppins]"
+              >Sara Hardin</span
+            >
+            <br />
+            <span class="text-center mx-auto justify-center flex text-gray-600"
+              >Project Manager</span
+            >
+          </div>
+          <div class="w-full desktop:w-1/4 py-[48px] bg-white font-[poppins]">
+            <div
+              class="relative w-[168px] h-[168px] rounded-[100%] overflow-hidden mx-auto group font-[poppins]"
+            >
+              <!-- تصویر اصلی -->
+              <img
+                class="w-full h-full object-cover"
+                src="./public/css/partials/images/about us/6.jpeg"
+                alt=""
+              />
+              <!-- دایره و گرادیانت هنگام هاور -->
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-[rgba(255,255,255,0.7)] to-[rgba(82,57,250,0.7)] rounded-[100%] flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-[poppins]"
+              >
+                <a href="#"
+                  ><img
+                    src="./public/css/partials/images/about us/Socials.svg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <span
+              class="text-[#1D2130] text-[24px] font-semibold text-center mx-auto justify-center flex pt-[12px] font-[poppins]"
+              >Sara Hardin</span
+            >
+            <br />
+            <span class="text-center mx-auto justify-center flex text-gray-600"
+              >Project Manager</span
+            >
+          </div>
+          <div class="w-full desktop:w-1/4 py-[48px] bg-white font-[poppins]">
+            <div
+              class="relative w-[168px] h-[168px] rounded-[100%] overflow-hidden mx-auto group"
+            >
+              <!-- تصویر اصلی -->
+              <img
+                class="w-full h-full object-cover"
+                src="./public/css/partials/images/about us/5.jpeg"
+                alt=""
+              />
+              <!-- دایره و گرادیانت هنگام هاور -->
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-[rgba(255,255,255,0.7)] to-[rgba(82,57,250,0.7)] rounded-[100%] flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-[poppins]"
+              >
+                <a href="#"
+                  ><img
+                    src="./public/css/partials/images/about us/Socials.svg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <span
+              class="text-[#1D2130] text-[24px] font-semibold text-center mx-auto justify-center flex pt-[12px] font-[poppins]"
+              >Sara Hardin</span
+            >
+            <br />
+            <span class="text-center mx-auto justify-center flex text-gray-600"
+              >Project Manager</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end our team -->
+
+    <!-- footer -->
+    <div class="w-full flex flex-wrap bg-backgroundHero font-[poppins]">
+      <div class="container flex flex-wrap desktop:flex-nowrap">
+        <div class="w-full desktop:w-1/2 mb-8 desktop:mb-0">
+          <img
+            class="mb-[16px] mt-[40px] desktop:mt-[104px]"
+            src="./public/css/partials/images/hero-home/logo.svg"
+            alt=""
+          />
+          <p
+            class="text-white opacity-70 mb-[24px] desktop:mb-[86px] w-full desktop:w-[400px] font-[poppins]"
+          >
+            We are always open to discuss your project and improve your online
+            presence.
+          </p>
+          <div
+            class="w-full desktop:w-[500px] h-auto desktop:h-[85px] bg-[#FCD980] flex flex-col desktop:flex-row p-4 desktop:p-0 font-[poppins]"
+          >
+            <span
+              class="pb-4 desktop:pb-0 desktop:pt-[18px] desktop:pl-[38px] text-[#282938]"
+            >
+              Email me at
+              <br />
+              contact@website.com
+            </span>
+            <span class="desktop:pt-[18px] desktop:pl-[38px] text-[#282938] font-[poppins]">
+              Call us
+              <br />
+              0927 6277 28525
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="w-full desktop:w-1/2 flex flex-col mt-[24px] desktop:mt-[96px] pl-[16px] desktop:pl-[32px] font-[poppins]"
+        >
+          <span
+            class="text-white text-[32px] desktop:text-[48px] font-semibold mb-[8px] desktop:mb-[16px]"
+          >
+            Lets Talk!
+          </span>
+          <p
+            class="text-white text-opacity-70 text-[14px] leading-[20px] desktop:text-[16px] desktop:leading-[24px] font-[poppins]"
+          >
+            We are always open to discuss your project, improve your online
+            presence, and help with your UX/UI design challenges.
+          </p>
+          <a href="#" class="mt-[24px] desktop:mt-[42px] font-[poppins]">
+            <img
+              src="./public/css/partials/images/home/Social Media Icon.svg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full flex font-[poppins] text-[#282938]">
+      <div
+        class="container flex flex-wrap desktop:flex-nowrap desktop:py-[32px] desktop:justify-between"
+      >
+        <div
+          class="w-full desktop:w-1/2 text-center desktop:text-left mb-4 desktop:mb-0"
+        >
+          <p class="text-[14px] desktop:text-[16px]">
+            Copyright 2022, Finsweet.com
+          </p>
+        </div>
+
+        <div
+          class="w-full desktop:w-1/2 flex flex-wrap desktop:flex-nowrap justify-center desktop:justify-end items-center"
+        >
+          <a
+            href="#"
+            class="mb-2 desktop:mb-0 desktop:pr-[32px] hover:underline text-[14px] desktop:text-[16px]"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="mb-2 desktop:mb-0 desktop:pr-[32px] hover:underline text-[14px] desktop:text-[16px]"
+            >About us</a
+          >
+          <a
+            href="#"
+            class="mb-2 desktop:mb-0 desktop:pr-[32px] hover:underline text-[14px] desktop:text-[16px]"
+            >Features</a
+          >
+          <a
+            href="#"
+            class="mb-2 desktop:mb-0 desktop:pr-[32px] hover:underline text-[14px] desktop:text-[16px]"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="mb-2 desktop:mb-0 desktop:pr-[32px] hover:underline text-[14px] desktop:text-[16px]"
+            >FAQ</a
+          >
+          <a href="#" class="hover:underline text-[14px] desktop:text-[16px]"
+            >Blog</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- end footer -->
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      // Toggle menu for mobile
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+      const closeBtn = document.getElementById("close-btn");
+      menuBtn.addEventListener("click", () => {
+        menu.classList.add("mobile-menu");
+        menu.classList.add("show");
+      });
+      closeBtn.addEventListener("click", () => {
+        menu.classList.remove("mobile-menu");
+        menu.classList.remove("show");
+      });
+      function toggleAccordion(id) {
+        const content = document.getElementById(`content-${id}`);
+        const icon = document.getElementById(`icon-${id}`);
+        const isHidden = content.classList.contains("hidden");
+
+        // Close all accordion items
+        document
+          .querySelectorAll('[id^="content-"]')
+          .forEach((el) => el.classList.add("hidden"));
+        document
+          .querySelectorAll('[id^="icon-"]')
+          .forEach((el) => (el.textContent = "+"));
+
+        // Toggle the clicked item
+        if (isHidden) {
+          content.classList.remove("hidden");
+          icon.textContent = "×";
+        }
+      }
+    </script>
+  </body>
+</html>
