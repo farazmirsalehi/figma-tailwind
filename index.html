@@ -11,7 +11,7 @@
     <!-- Start Project -->
     <div class="w-full bg-backgroundHero flex flex-wrap">
       <!-- Navbar -->
-      <div class="container flex items-center justify-between py-4">
+      <nav class="container fixed top-0 left-0 w-full shadow bg-[#1C1E53] flex items-center justify-between py-4 ">
         <!-- Logo -->
         <div class="w-1/3">
           <img
@@ -93,7 +93,7 @@
             >Contact us</a
           >
         </div>
-      </div>
+      </nav>
       <!-- End Navbar -->
 
       <!-- Hero Section -->
@@ -299,58 +299,64 @@
           </div>
         </div>
         <div
-          class="w-full mobail:w-full desktop:w-1/3 flex flex-wrap justify-between"
+        class="w-full mobile:w-full desktop:w-1/3 flex flex-wrap justify-between"
+      >
+        <a
+          class="font-[poppins] text-[#282938] flex items-end justify-end pt-[20px] ml-auto mobile:text-sm desktop:text-lg mb-6"
+          href="#"
         >
-          <span
-            class="font-[poppins] text-[#282938] flex items-end justify-end pt-[20px] ml-auto mobail:text-sm desktop:text-lg"
-            >view more</span
+          view more
+          <img
+            src="./public/css/partials/images/home/arrow.svg"
+            alt="Arrow"
+            class="ml-2 mb-2 flex"
+          />
+        </a>
+        <div class="w-full h-fit mb-12">
+          <!-- بخش اول تصویر -->
+          <div
+            class="relative flex flex-row-reverse overflow-hidden w-full h-[284px] group"
           >
-          <div class="w-full pt-[68px]">
+            <img
+              class="w-[320px] flex items-end justify-end pb-2"
+              src="./public/css/partials/images/home/image2.jpeg"
+              alt="Unisaas Website Design"
+            />
             <div
-              class="relative flex flex-row-reverse overflow-hidden w-full h-[284px] group"
+              class="absolute top-0 right-[-100%] h-full w-11/12 bg-gradient-to-tl from-[#1C1E53] to-[#1C1E536B] bg-opacity-70 transition-all duration-500 ease-in-out group-hover:right-0"
             >
-              <img
-                class="w-[320px] flex items-end justify-end"
-                src="./public/css/partials/images/home/image2.jpeg"
-                alt=""
-              />
-
-              <div
-                class="absolute top-0 right-[-100%] h-full w-11/12 bg-gradient-to-tl from-[#1C1E53] to-[#1C1E536B] bg-opacity-70 transition-all duration-500 ease-in-out group-hover:right-0"
-              >
-                <div
-                  class="flex flex-col justify-center h-full px-6 text-white"
+              <div class="flex flex-col justify-center h-full px-6 text-white">
+                <h2
+                  class="text-xl font-semibold w-2/3 opacity-0 translate-y-8 transition-all duration-500 delay-300 group-hover:opacity-100 group-hover:translate-y-0"
                 >
-                  <h2
-                    class="text-xl font-semibold w-2/3 opacity-0 translate-y-8 transition-all duration-500 delay-300 group-hover:opacity-100 group-hover:translate-y-0"
-                  >
-                    Unisaas Website Design
-                  </h2>
-                  <a
-                    href="#"
-                    class="text-[#FCD980] flex flex-wrap hover:text-backgroundHero pt-[8px] opacity-0 translate-y-8 transition-all duration-500 delay-200 group-hover:opacity-100 group-hover:translate-y-0"
-                  >
+                  Unisaas Website Design
+                </h2>
+                <a
+                  href="#"
+                  class="text-[#FCD980] flex flex-wrap hover:text-backgroundHero pt-[8px] opacity-0 translate-y-8 transition-all duration-500 delay-200 group-hover:opacity-100 group-hover:translate-y-0"
+                >
                   View portfolio
-                    <img
-                      src="./public/css/partials/images/home/ar.svg"
-                      alt="Arrow"
-                      class="ml-2 flex"
-                    />
-                  </a>
-                </div>
+                  <img
+                    src="./public/css/partials/images/home/ar.svg"
+                    alt="Arrow"
+                    class="ml-2 flex"
+                  />
+                </a>
               </div>
             </div>
-            <div
-              class="relative flex flex-row-reverse  overflow-hidden w-full pt-[12px] h-[284px] group "
-            >
-              <img
-                class="w-[320px] h-[250px] flex items-end justify-end"
-                src="./public/css/partials/images/home/image3.jpeg"
-                alt=""
-              />
-            </div>
+          </div>
+          <!-- بخش دوم تصویر -->
+          <div
+            class="relative flex flex-row-reverse overflow-hidden w-full pt-[12px] h-[284px] group desktop:mb-11"
+          >
+            <img
+              class="w-[320px] h-[250px] flex items-end justify-end"
+              src="./public/css/partials/images/home/image3.jpeg"
+              alt="Additional Design"
+            />
           </div>
         </div>
+      </div>
       </div>
     </div>
     <!-- end our work -->
@@ -791,50 +797,53 @@
         </div>
 
         <!-- قسمت متن -->
-        <div
-          class="w-full desktop:w-1/2 bg-[#1C1E53] flex flex-col justify-center pl-4 pr-4 desktop:pl-[48px] desktop:pr-[24px] text-white h-full "
+        <form
+        class="w-full desktop:w-1/2 bg-[#1C1E53] flex flex-col justify-center pl-4 pr-4 desktop:pl-[48px] desktop:pr-[24px] text-white"
+      >
+        <span
+          class="text-lg desktop:text-2xl font-semibold mb-4 mt-6 desktop:mt-[80px]"
         >
-          <span
-            class="text-lg desktop:text-2xl font-semibold mb-4 mt-6 desktop:mt-[80px]"
-            >Send inquiry</span
+          Send inquiry
+        </span>
+        <span class="text-sm desktop:text-base">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore.
+        </span>
+        <div class="mt-6">
+          <input
+            type="text"
+            class="bg-backgroundHero border w-full border-gray-600 rounded-[8px] px-4 py-2 hover:border-[#FCD980] hover:text-[#FCD980] transition duration-300 text-left text-gray-600 mb-[16px] h-[64px]"
+            placeholder="YOUR NAME"
+          />
+          <input
+            type="email"
+            class="bg-backgroundHero border w-full border-gray-600 rounded-[8px] px-4 py-2 hover:border-[#FCD980] hover:text-[#FCD980] transition duration-300 text-left text-gray-600 mb-[16px] h-[64px]"
+            placeholder="Email"
+          />
+          <input
+            type="url"
+            class="bg-backgroundHero border w-full border-gray-600 rounded-[8px] px-4 py-2 hover:border-[#FCD980] hover:text-[#FCD980] transition duration-300 text-left text-gray-600 mb-[40px] h-[64px]"
+            placeholder="Paste your Figma design URL"
+          />
+          <button
+            type="submit"
+            class="bg-[#FCD980] border w-full rounded-[40px] px-6 py-2 hover:bg-backgroundHero hover:text-white transition duration-300 text-backgroundHero mb-[16px] text-center h-[64px]"
           >
-          <span class="text-sm desktop:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore.
-          </span>
-          <div class="mt-6">
-            <button
-              class="bg-backgroundHero border w-full border-gray-600 rounded-[8px] px-4 py-2 hover:border-[#FCD980] hover:text-[#FCD980] transition duration-300 text-left text-gray-600 mb-[16px] h-[64px]"
-            >
-              YOUR NAME
-            </button>
-            <button
-              class="bg-backgroundHero border w-full border-gray-600 rounded-[8px] px-4 py-2 hover:border-[#FCD980] hover:text-[#FCD980] transition duration-300 text-left text-gray-600 mb-[16px] h-[64px]"
-            >
-              Email
-            </button>
-            <button
-              class="bg-backgroundHero border w-full border-gray-600 rounded-[8px] px-4 py-2 hover:border-[#FCD980] hover:text-[#FCD980] transition duration-300 text-left text-gray-600 mb-[40px] h-[64px]"
-            >
-              Paste your Figma design URL
-            </button>
-            <button
-              class="bg-[#FCD980] border w-full rounded-[40px] px-6 py-2 hover:bg-backgroundHero hover:text-white transition duration-300 text-backgroundHero mb-[16px] text-center h-[64px]"
-            >
-              Send an inquiry
-            </button>
-          </div>
-          <a
-            href="#"
-            class="w-full flex flex-wrap items-center justify-center hover:text-[#FCD980] pb-1"
-            >Get in touch with us
-            <img
-              src="./public/css/partials/images/home/ar.svg"
-              alt="Arrow"
-              class="ml-2 flex"
-            />
-          </a>
+            Send an inquiry
+          </button>
         </div>
+        <a
+          href="#"
+          class="w-full flex flex-wrap items-center justify-center hover:text-[#FCD980] pb-1"
+        >
+          Get in touch with us
+          <img
+            src="./public/css/partials/images/home/ar.svg"
+            alt="Arrow"
+            class="ml-2 flex"
+          />
+        </a>
+      </form>
       </div>
     </div>
     <!-- end contact us -->
